@@ -1,0 +1,60 @@
+/* potential fonts go below */
+
+
+
+/* styling root */
+* {
+    box-sizing: border-box;
+}
+
+/* set min height  */
+html {
+    min-height: 100vh;
+}
+
+/* color and style body */
+body {
+    margin: 0;
+    background: radial-gradient(#f7a6d4, #ecc9f0);
+}
+
+
+/* page title style */
+.game-title {
+    color: #fefdfd;
+    text-align:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 6rem;
+}
+
+/* stlyes for time and flip text */
+.time-and-flip {
+    color:beige;
+    font-family: Cambria;
+    font-size: 3rem;
+
+}
+
+/* doing it for the time and flip but as one class to avoid confusion */
+.time-and-flip {
+    grid-column: 1/-1;
+}
+
+
+/* how we want the container to hold cards, choosing grid */
+.game-container {
+    display: grid;
+    /* based on the 8 cards */
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+/* card styles, inital is white while I go find good images */
+.card {
+    background-color: white;
+    height: 200px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 5%;
+}
