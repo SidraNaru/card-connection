@@ -104,3 +104,35 @@ img {
     backface-visibility: hidden;
 }
 
+.time-and-flip {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* overlay styles */
+.overlay-text {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    position: fixed;
+    z-index: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 500ms ease-in-out;
+    color:beige;
+
+}
+
+.overlay-text-small {
+    font-size: 0.3rem;
+}
+
+.overlay-text.visible {
+display: flex;
+  animation: overlay-grow 500ms forwards;
+  
+
+}
